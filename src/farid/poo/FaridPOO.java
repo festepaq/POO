@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package farid.poo;
-
+import java.util.Scanner;
 
 
 
@@ -17,11 +17,22 @@ public class FaridPOO {
      
    java.util.Scanner teclado=
            new java.util.Scanner(System.in);
-  System.out.println("Ingrese nombre");
+ 
   
-  Cuenta farid= new Cuenta();
+  Cuenta usuario1= new Cuenta("magdalena Sanchez", 1234, 1012, 0);
+  Cuenta usuario2= new Cuenta("Joselito Perez",9876,1013,500000);
   
-  
+   usuario1.consulta();
+   float a= 100000;
+   
+   usuario1.consignar(a);
+    usuario1.consulta();
+    
+          
+    
+   usuario2.cambio();
+   
+  System.out.println(usuario2.clave);
   
    
     }
